@@ -46,7 +46,7 @@ if not st.session_state.final:
                st.session_state.submit = False
             if not st.session_state.submit:
                   sum,credits= 0.0,19
-                  a = st.selectbox("**CO211-Maths(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  a = st.selectbox("**CO211-Maths(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
                   if   a=='A+':
                      sum += 3*(10.0)
                   elif a=='A':
@@ -64,7 +64,7 @@ if not st.session_state.final:
                
 
 
-                  b = st.selectbox("**CO212-Universal Human Values(2 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  b = st.selectbox("**CO212-Universal Human Values(2 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   b=='A+':
                      sum += 2*(10.0)
@@ -82,7 +82,7 @@ if not st.session_state.final:
                      sum += 0.0
 
 
-                  c = st.selectbox("**CO213-Discrete Maths(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  c = st.selectbox("**CO213-Discrete Maths(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   c=='A+':
                      sum += 3*(10.0)
@@ -100,7 +100,7 @@ if not st.session_state.final:
                      sum += 0.0
 
 
-                  d = st.selectbox("**CO214-Computer Organization(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  d = st.selectbox("**CO214-Computer Organization(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   d=='A+':
                      sum += 3*(10.0)
@@ -118,7 +118,7 @@ if not st.session_state.final:
                      sum += 0.0
 
 
-                  e = st.selectbox("**CO215-Design and Analysis of Algorithms(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  e = st.selectbox("**CO215-Design and Analysis of Algorithms(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   e=='A+':
                      sum += 3*(10.0)
@@ -136,7 +136,7 @@ if not st.session_state.final:
                      sum += 0.0
 
 
-                  f = st.selectbox("**CO216-Object Oriented Programming(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  f = st.selectbox("**CO216-Object Oriented Programming(3 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   f=='A+':
                      sum += 3*(10.0)
@@ -153,25 +153,24 @@ if not st.session_state.final:
                   else:
                      sum += 0.0
 
-
-                  g = st.selectbox("**CO252-Design and Analysis of Algorithms Lab(1 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  g = st.selectbox("**CO251-Skill Enhancement Course-1(2 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   g=='A+':
-                     sum += 10.0
+                     sum += 2*(10.0)
                   elif g=='A':
-                     sum += 9.0
+                     sum += 2*(9.0)
                   elif g=='B':
-                     sum += 8.0
+                     sum += 2*(8.0)
                   elif g=='C':
-                     sum += 7.0
+                     sum += 2*(7.0)
                   elif g=='D':
-                     sum += 6.0
+                     sum += 2*(6.0)
                   elif g=='E':
-                     sum += 5.0
+                     sum += 2*(5.0)
                   else:
                      sum += 0.0
 
-                  h = st.selectbox("**CO253-Object Oriented Programming Lab(1 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--select Grade--")
+                  h = st.selectbox("**CO252-Design and Analysis of Algorithms Lab(1 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
 
                   if   h=='A+':
                      sum += 10.0
@@ -184,6 +183,23 @@ if not st.session_state.final:
                   elif h=='D':
                      sum += 6.0
                   elif h=='E':
+                     sum += 5.0
+                  else:
+                     sum += 0.0
+
+                  i = st.selectbox("**CO253-Object Oriented Programming Lab(1 Credits)**",['A+','A','B','C','D','E','F'],index=None,placeholder="--Select Grade--")
+
+                  if   i=='A+':
+                     sum += 10.0
+                  elif i=='A':
+                     sum += 9.0
+                  elif i=='B':
+                     sum += 8.0
+                  elif i=='C':
+                     sum += 7.0
+                  elif i=='D':
+                     sum += 6.0
+                  elif i=='E':
                      sum += 5.0
                   else:
                      sum += 0.0
@@ -226,3 +242,4 @@ if st.button("Calculate again"):
       
 
          
+
